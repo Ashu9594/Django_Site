@@ -34,4 +34,7 @@ def home(request):
 
     cat = Category.objects.all()
     return render(request, 'home.html',{'cat':cat})
-    
+
+def details(request):
+
+    return render(request, 'details.html')
